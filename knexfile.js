@@ -4,7 +4,7 @@ module.exports = {
   development: {
     client: "sqlite3",
     connection: {
-      filename: "./dev.sqlite3",
+      filename: "./data/users.db3",
     },
   },
 
@@ -21,11 +21,11 @@ module.exports = {
     },
     useNullAsDefault: true,
     migrations: {
-      tableName: "knex_migrations",
+      tableName: "users",
     },
   },
 
-  production: {
+  /*production: {
     client: "postgresql",
     connection: {
       database: "my_db",
@@ -37,7 +37,7 @@ module.exports = {
       max: 10,
     },
     migrations: {
-      tableName: "knex_migrations",
+      tableName: "users",
     },
-  },
+  },*/
 };
